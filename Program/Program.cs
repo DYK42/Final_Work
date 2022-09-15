@@ -18,3 +18,20 @@ string[] ArrayFilling()
 
     return array;
 }
+
+string[] GetArraySortedbySize(string[] arr, int maxSize)
+{
+    string sresult = string.Empty;
+
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if(arr[i].Length <= maxSize)
+        {
+            sresult += (i <=0 ? "" : ",") + arr[i];
+        }
+    }
+
+    string[] result = sresult.Split(",");
+    
+    return result;
+}
