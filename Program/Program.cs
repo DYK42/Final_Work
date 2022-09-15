@@ -35,3 +35,9 @@ string[] GetArraySortedbySize(string[] arr, int maxSize)
     
     return result;
 }
+
+string[] array = ArrayFilling();
+Console.WriteLine($"{string.Join(", ", array)}");
+
+string[] result = GetArraySortedbySize(array, 3);
+Console.WriteLine($"{string.Join(", ", result)}");
